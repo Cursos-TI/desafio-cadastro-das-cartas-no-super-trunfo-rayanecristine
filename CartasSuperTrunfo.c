@@ -46,7 +46,7 @@ int main(void) {
     scanf("%c", &estado2);
 
     printf("Codigo (ex: A01): ");
-    scant("%3s", codigo2);
+    scanf("%3s", codigo2);
 
     printf("Nome da cidade: ");
     scanf(" %59[^\n]", cidade2);
