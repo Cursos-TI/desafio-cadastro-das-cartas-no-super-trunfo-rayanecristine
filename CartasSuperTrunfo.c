@@ -1,25 +1,28 @@
 #include <stdio.h>
 
 int main(void) {
-    // Carta 1
+
+    //Carta 1
+    //Declaração das variáveis 1
     char estado1;
-    char codigo1[4];     // 3 chars + '\0'
-    char cidade1[100];   // até 99 + '\0'
+    char codigo1[4];     
+    char cidade1[100];   
     int  populacao1;
     float area1;
     float pib1;
     int  pontos1;
 
+    //Leitura dos dados 1
     printf("=== Cadastro da carta 1 ===\n");
 
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1);                 // espaço antes de %c
+    scanf(" %c", &estado1);                 
 
     printf("codigo (ex: A01): ");
-    scanf(" %3s", codigo1);                 // limita a 3 chars
+    scanf(" %3s", codigo1);                 
 
     printf("Nome da cidade: ");
-    scanf(" %99[^\n]", cidade1);            // lê até a quebra de linha
+    scanf(" %99[^\n]", cidade1);            
 
     printf("Populacao: ");
     scanf(" %d", &populacao1);
@@ -33,7 +36,8 @@ int main(void) {
     printf("Numero de pontos turisticos: ");
     scanf(" %d", &pontos1);
 
-    // Carta 2
+    //Carta 2
+    //Declaração das variáveis 2
     char estado2;
     char codigo2[4];
     char cidade2[100];
@@ -41,11 +45,12 @@ int main(void) {
     float area2;
     float pib2;
     int  pontos2;
-
+    
+    //Leitura dos dados 2
     printf("\n=== Cadastro da carta 2 ===\n");
 
     printf("Estado (A-H): ");
-    scanf(" %c", &estado2);                 // espaço antes de %c
+    scanf(" %c", &estado2);                 
 
     printf("Codigo (ex: A01): ");
     scanf(" %3s", codigo2);
@@ -65,7 +70,7 @@ int main(void) {
     printf("Numero de pontos turisticos: ");
     scanf(" %d", &pontos2);
 
-    // Saída
+    //Impressão dos dados
     printf("\n---Carta 1 ---\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
