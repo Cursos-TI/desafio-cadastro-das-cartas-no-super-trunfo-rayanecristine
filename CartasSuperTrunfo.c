@@ -1,68 +1,71 @@
-# include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
-    //Carta 1
+    // Carta 1
     char estado1;
-    char codigo1[4];
-    char cidade1[100];
-    int populacao1;
+    char codigo1[4];     // 3 chars + '\0'
+    char cidade1[100];   // até 99 + '\0'
+    int  populacao1;
     float area1;
     float pib1;
-    int pontos1;
+    int  pontos1;
 
     printf("=== Cadastro da carta 1 ===\n");
-    printf("Estado (A-H):");
-    scanf("%c", &estado1);
+
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado1);                 // espaço antes de %c
 
     printf("codigo (ex: A01): ");
-    scanf("%3s", codigo1);
+    scanf(" %3s", codigo1);                 // limita a 3 chars
 
     printf("Nome da cidade: ");
-    scanf("%59[^\n]", cidade1);
+    scanf(" %99[^\n]", cidade1);            // lê até a quebra de linha
 
     printf("Populacao: ");
-    scanf("%d", &populacao1);
+    scanf(" %d", &populacao1);
 
     printf("Area (km2): ");
-    scanf("%f", %area1);
+    scanf(" %f", &area1);
 
     printf("PIB (em bilhoes de R$): ");
-    scanf("%f", &pib1);
+    scanf(" %f", &pib1);
 
     printf("Numero de pontos turisticos: ");
-    scanf("%d", &pontos1);
+    scanf(" %d", &pontos1);
 
-    //carta 2
+    // Carta 2
     char estado2;
     char codigo2[4];
     char cidade2[100];
-    int populacao2;
+    int  populacao2;
     float area2;
     float pib2;
-    int pontos2;
+    int  pontos2;
 
     printf("\n=== Cadastro da carta 2 ===\n");
-    printf("estado (A-H): ");
-    scanf("%c", &estado2);
+
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado2);                 // espaço antes de %c
 
     printf("Codigo (ex: A01): ");
-    scanf("%3s", codigo2);
+    scanf(" %3s", codigo2);
 
     printf("Nome da cidade: ");
-    scanf(" %59[^\n]", cidade2);
+    scanf(" %99[^\n]", cidade2);
 
     printf("Populacao: ");
-    scanf("%d", &populacao2);
+    scanf(" %d", &populacao2);
 
     printf("Area (km2): ");
-    scanf("%f", &area2);
+    scanf(" %f", &area2);
 
     printf("PIB (em bilhoes de R$): ");
-    scanf("%f", &pib2);
+    scanf(" %f", &pib2);
 
     printf("Numero de pontos turisticos: ");
-    scanf("%d", &pontos2);
+    scanf(" %d", &pontos2);
 
+    // Saída
     printf("\n---Carta 1 ---\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
